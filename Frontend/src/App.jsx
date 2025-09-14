@@ -19,7 +19,7 @@ function App() {
   }, [])
 
   async function ReviewCode() {
-    const response = await axios.post('http://localhost:3000/ai/get-review' , { code });
+    const response = await axios.post('http://ai-code-review-ejz7.onrender.com/ai/get-review' , { code });
 
     setReview(response.data);
 
