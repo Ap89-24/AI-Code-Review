@@ -1,0 +1,78 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+main{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+main .left, 
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.9rem;
+}
+
+main .left {
+  background-color: black;
+  position: relative;
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: rgb(20, 20, 20);
+}
+
+main .left .review-btn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  padding: 0.7rem 1.2rem;
+  background-color: rgb(185, 90, 236);
+  border-radius: 0.5rem;
+  color: rgb(135, 223, 236);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main .right {
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  overflow: auto;
+}
+
+
+main .left .review-btn:hover {
+  background-color: darkmagenta;
+  color: white;
+}
+
+.head{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  background: linear-gradient(90deg, rgba(185,90,236,1) 0%, rgba(135,223,236,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
